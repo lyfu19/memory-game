@@ -1,0 +1,81 @@
+html, body, #root {
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overscroll-behavior: none;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #38bdf8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: #1e293b;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.5 ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  background-color: #334155;
+  transform: scale(1.05);
+}
+
+.card p {
+  color: #f8fafc;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.instructions {
+  color: #94a3b8;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
